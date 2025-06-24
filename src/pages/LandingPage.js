@@ -19,9 +19,12 @@ function LandingPage() {
         <div className="header-row">
           <div className="logo-text"></div>
           <div>
-            <a className="header-button">HOME</a>
-            <a className="header-button">CONTACT</a>
-            <a className="header-button">ABOUT US</a>
+            <div className="header-button-row-container">
+              <div className="header-button-text">Already have an account?</div>
+              <button className="header-button" onClick={onClickLogin}>
+                LOGIN
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -38,14 +41,6 @@ function LandingPage() {
               <div className="content-button-text">Don't have an account?</div>
               <button className="content-button" onClick={onClickSignIn}>
                 SIGN IN
-              </button>
-            </div>
-            <div className="content-button-row-container">
-              <div className="content-button-text">
-                Already have an account?
-              </div>
-              <button className="content-button" onClick={onClickLogin}>
-                LOGIN
               </button>
             </div>
           </div>

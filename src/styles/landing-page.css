@@ -20,18 +20,39 @@
   font-size: 25px;
 }
 
-.header-button {
+.header-button-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-button-text {
   color: white;
+  font-size: 16px;
+}
+
+.header-button {
+  margin-left: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  cursor: pointer;
+  background-color: white;
   border: none;
-  background-color: none;
   border-radius: 10px;
+  font-size: 16px;
+  transition: background-color 0.15s;
+}
+
+.header-button:hover {
+  background-color: gold;
+  color: black;
 }
 
 .content-container {
+  background-color: rgb(255, 252, 238);
   display: flex;
   flex-direction: row;
   padding-left: 100px;
@@ -39,13 +60,6 @@
   height: 744px;
   justify-content: space-between;
   align-items: center;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  background-image: url("../assets/images/background-img-6.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
 }
 
 .context-right-container {
@@ -69,6 +83,8 @@
 }
 
 .content-text {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 100px;
 }
 
@@ -89,19 +105,22 @@
 }
 
 .content-button {
+  margin-left: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: white;
+  background-color: gold;
+  cursor: pointer;
   border: none;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 16px;
   transition: background-color 0.15s;
 }
 
 .content-button:hover {
-  background-color: rgb(255, 196, 0);
+  background-color: black;
+  color: gold;
 }
 
 .feature-container {
@@ -180,9 +199,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/images/background-img-6.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
 }
 
 .message-top-container {
