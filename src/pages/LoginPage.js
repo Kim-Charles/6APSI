@@ -5,16 +5,18 @@ function LoginPage() {
   return (
     <div>
       <h2>Login</h2>
-      <input
+      <div>Username:{" "}<input
         type="text"
         placeholder="Username"
-       
-      /><br />
+      /></div><br />
+      <div>
+        Password:{" "}
       <input
         type="password"
         placeholder="Password"
-     
-      /><br />
+      />
+      </div>
+      <br />
       <button >Login</button>
     </div>
   );
